@@ -5,14 +5,14 @@ function MovieItem(props) {
   return (
     <div className="product-comp">
       <div className="container-2">
-        <img src={props.img} width={300} alt="Avatar" />
+        <img src={props.img} width={300} alt="poster image" />
         <div className="overlay">
           <div className="text">{props.description}</div>
         </div>
       </div>
 
       <h3 className="product-Name">{props.title}</h3>
-      <ReactStars 
+      <ReactStars
         className="file-stars movie-stars"
         count={10}
         // onChange={ratingChanged}

@@ -54,4 +54,30 @@ export const movies = [
     description:
       "Un élève du secondaire victime d'intimidation et un petit criminel deviennent les principaux suspects du meurtre d'une adolescente",
   },
+  {
+    img: "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg",
+    title: "Parasite",
+    rating: 8,
+    description: `La famille Kim, pauvre et au chômage, vit d'expédients dans un taudis en sous-sol.
+     Un jour, le fils réussit, au moyen d'un faux diplôme, à se faire embaucher pour donner des cours d'anglais à la fille d'une famille richissime.
+       C'est le début d'une succession d'événements qui vont rapprocher les deux familles.`,
+  },
+  {
+    img: "https://fr.web.img2.acsta.net/pictures/21/06/08/16/17/3217700.jpg",
+    title: "Minari",
+    rating: 7,
+    description: `A tender and sweeping story about what roots us, Minari follows a Korean-American family that moves to a tiny Arkansas farm in search of their own American Dream.`,
+  },
+  {
+    img: "https://imgsrc.cineserie.com/2020/11/2148264.jpg?ver=1",
+    title: "Seobok",
+    rating: 6,
+    description: `Premier clone humain détenteur de la vie éternelle, Seo Bok est la cible de plusieurs organisations cherchant soit à l'enlever, soit à le détruire.`,
+  },
+  {
+    img: "https://fr.web.img3.acsta.net/medias/nmedia/18/63/30/68/18686447.jpg",
+    title: " les Évadés",
+    rating: 9,
+    description: `Il raconte l'histoire d'Andy Dufresne (Tim Robbins), un homme injustement condamné pour les meurtres de sa femme et de l'amant de celle-ci, et qui va passer près de vingt ans à la prison d'État de Shawshank (en), endurant diverses épreuves mais se liant également d'amitié avec Red (Morgan Freeman), un autre détenu.`,
+  },
 ];

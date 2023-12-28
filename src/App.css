@@ -204,11 +204,12 @@
 }
 .stars {
   display: flex;
-
-  padding: 10px;
+box-sizing: border-box;
+  padding: 30px;
   justify-content: space-between;
 }
 .file-stars {
+  
   margin-top: 0px;
   padding: 20px;
   width: 200px;
@@ -268,6 +269,9 @@
   cursor: pointer;
 }
 .stars-icones {
+
   display: flex;
   align-items: center;
+
+
 }
