@@ -15,7 +15,7 @@ function Header({ query, setQuery, Search, myrating, setMyRating }) {
     }
   };
   return (
-    <div className="stars-copm">
+    <div className="hedear-movie">
       <div className="stars">
         <div className="stars-icones">
           <ReactStars
@@ -26,19 +26,16 @@ function Header({ query, setQuery, Search, myrating, setMyRating }) {
             color2={"#ffd700"}
             value={myrating}
           />
-
           <IoIosUndo className="icones" onClick={() => setMyRating(0)} />
         </div>
-
-        <img src="./images/film.png" width={200} alt="film" />
       </div>
-
-      <div className="hedear-movie">
+      <div className="search">
         <input type="text" placeholder="Search..." onChange={valuehandler} />
         <button className="button-92" onClick={() => setQuery(myvalue)}>
           Rechercher
         </button>
       </div>
+      <img src="/images/film.png" width={150} alt="film" />
     </div>
   );
 }

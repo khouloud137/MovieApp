@@ -1,5 +1,5 @@
 .App {
-  background-color: #06090f;
+  background-color: #1e2129;
 }
 
 .product-comp {
@@ -11,7 +11,7 @@
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   width: 400px;
   margin: auto;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   width: 300px;
   /* height: 500px; */
 
@@ -32,8 +32,9 @@
 .product-liste {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 200px;
-  margin-bottom: 50px;
+  justify-content: center;
+  margin: 200px auto 50px auto;
+  /* padding-left: 30px; */
 }
 .product-group {
   display: flex;
@@ -87,17 +88,24 @@
   border-radius: 7px;
 }
 .hedear-movie {
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(172, 160, 160, 0.15) 0px -36px 30px 0px inset,
-    rgba(220, 202, 202, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(196, 176, 176, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(193, 183, 183, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  max-width: 700px;
+  box-shadow: rgba(0, 0, 0, 0.275) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.275) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.275) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.275) 0px 2px 1px, rgba(231, 227, 5, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.275) 0px 8px 4px, rgba(246, 234, 3, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.275) 0px 32px 16px;
+  /* max-width: 700px; */
+  background-color: rgba(0, 0, 0, 0.275);
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 40px;
-  padding: 40px 0;
+  padding: 40px 50px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 8;
+  margin-bottom: 60px;
 }
 .Image {
   border: 3px solid #29b6f6;
@@ -204,18 +212,17 @@
 }
 .stars {
   display: flex;
-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 30px;
   justify-content: space-between;
 }
 .file-stars {
-  
   margin-top: 0px;
   padding: 20px;
   width: 200px;
 }
-.stars img {
-  /* height: 250px; */
+.hedear-movie img {
+  /* height: 200px; */
   margin-left: 70px;
   animation: mymove 5s infinite;
 }
@@ -269,9 +276,9 @@ box-sizing: border-box;
   cursor: pointer;
 }
 .stars-icones {
-
   display: flex;
   align-items: center;
-
-
+}
+a {
+  text-decoration: none;
 }

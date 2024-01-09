@@ -1,0 +1,24 @@
+.trailer-container {
+  width: 400px;
+  padding: 90px;
+  width: 900px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-align: center;
+}
+.btn-navig {
+  all: unset;
+  border: white 2px solid;
+  padding: 20px;
+  border-radius: 3px;
+}
+.trailer-container span{
+color: brown;
+font-weight: 900;
+font-size: 1.9rem;
+
+}

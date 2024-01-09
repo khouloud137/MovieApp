@@ -4,12 +4,14 @@ import MovieListe from "./component/MovieListe";
 import Header from "./component/Header";
 import { movies } from "./movies";
 import AddMovie from "./component/AddMovie";
+import { Route, Routes } from "react-router-dom";
+import Cardtrailer from "./component/Cardtrailer";
+
 
 function App() {
   const [query, setQuery] = useState("");
   const [myrating, setMyRating] = useState(null);
-  const [listeMovies,setListeMovies]= useState(movies);
-  
+  const [listeMovies, setListeMovies] = useState(movies);
 
   const Search = listeMovies.filter((movie) => {
     const filterbytitle = query
@@ -18,8 +20,7 @@ function App() {
     const filterbyrating = myrating ? movie.rating === myrating : true;
     return filterbytitle && filterbyrating;
   });
-  // console.log(Search);
-  console.log(myrating);
+  
 
   return (
     <div className="App">
@@ -30,7 +31,14 @@ function App() {
         myrating={myrating}
         setMyRating={setMyRating}
       />
-      <MovieListe Search={Search} />
+      <Routes>
+        <Route path="/" element={<MovieListe Search={Search} />} />
+        <Route
+          path="/trailer/:id"
+          element={<Cardtrailer listeMovies={listeMovies} />}
+        />
+      </Routes>
+
       <div className="Add-movie">
         <div className="Image">
           <img

@@ -5,7 +5,7 @@ function MovieItem(props) {
   return (
     <div className="product-comp">
       <div className="container-2">
-        <img src={props.img} width={300} alt="poster image" />
+        <img src={props.img} width={300} alt="poster" />
         <div className="overlay">
           <div className="text">{props.description}</div>
         </div>
